@@ -5,74 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Marca Personal - Negocios Digitales</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        body {
             background-color: #f4f4f4;
+            color: #333;
             text-align: center;
         }
         header {
-            background: #333;
+            background: linear-gradient(135deg, #007BFF, #00C6FF);
             color: white;
             padding: 20px;
-            font-size: 24px;
+            font-size: 28px;
+            font-weight: bold;
         }
-        section {
-            max-width: 800px;
-            margin: 20px auto;
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
             background: white;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
         }
         h1 {
-            color: #333;
-        }
-        h2 {
+            font-size: 26px;
+            margin-bottom: 15px;
             color: #007BFF;
         }
-        ul {
-            list-style: none;
-            padding: 0;
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
         }
-        li {
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .service-card {
             background: #007BFF;
             color: white;
-            margin: 5px 0;
-            padding: 10px;
-            border-radius: 5px;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 8px;
+            width: 250px;
+            font-weight: bold;
         }
         footer {
+            margin-top: 30px;
             background: #333;
             color: white;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            padding: 15px;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Mi Marca Personal</h1>
+        Mi Marca Personal - Negocios Digitales
     </header>
-    <section>
-        <h2>Sobre Mí</h2>
-        <p>Soy un experto en negocios online con énfasis en la creación de sistemas integrales de negocios digitales. Ayudo a emprendedores y empresas a desarrollar negocios online completos y escalables.</p>
-    </section>
-    <section>
-        <h2>Mis Servicios</h2>
-        <ul>
-            <li>Creación de Páginas Web</li>
-            <li>Marketing Digital y Publicidad Online</li>
-            <li>Automatización de Procesos de Negocio</li>
-            <li>Estrategias de Monetización</li>
-            <li>Gestión y Crecimiento de Negocios Online</li>
-        </ul>
-    </section>
+    
+    <div class="container">
+        <h1>Sobre Mí</h1>
+        <p>Soy un experto en negocios online con énfasis en la creación de sistemas integrales de negocios digitales. Ayudo a emprendedores y empresas a construir negocios online completos y escalables.</p>
+        
+        <h1>Mis Servicios</h1>
+        <div class="services">
+            <div class="service-card">🌐 Creación de Páginas Web</div>
+            <div class="service-card">📈 Marketing Digital y Publicidad</div>
+            <div class="service-card">⚙️ Automatización de Procesos</div>
+            <div class="service-card">💰 Estrategias de Monetización</div>
+            <div class="service-card">🚀 Crecimiento de Negocios Online</div>
+        </div>
+    </div>
+
     <footer>
         &copy; 2025 - Mi Marca Personal
     </footer>
+</body>
+</html>
+
 </body>
 </html>
