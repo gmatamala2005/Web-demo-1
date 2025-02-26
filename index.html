@@ -7,52 +7,81 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100 text-gray-900">
-    <header class="bg-white shadow-md p-4">
+    <header class="bg-black text-white shadow-md p-4">
         <div class="max-w-6xl mx-auto flex justify-between items-center">
             <h1 class="text-2xl font-bold">Mi Marca</h1>
             <nav>
-                <a href="#servicios" class="text-gray-700 hover:text-blue-500 px-4">Servicios</a>
-                <a href="#contacto" class="text-gray-700 hover:text-blue-500 px-4">Contacto</a>
+                <a href="#servicios" class="text-white hover:text-[#FFF200] px-4">Servicios</a>
+                <a href="#contacto" class="text-white hover:text-[#FFF200] px-4">Contacto</a>
             </nav>
         </div>
     </header>
     
-    <section class="text-center py-20 bg-blue-500 text-white">
+    <section class="text-center py-20 bg-[#FFF200] text-black">
         <h2 class="text-4xl font-extrabold">Construyendo Sistemas de Negocios Digitales</h2>
         <p class="mt-4 text-lg">Ayudo a emprendedores y empresas a escalar sus negocios con estrategias digitales efectivas.</p>
         <div class="mt-6">
-            <a href="#servicios" class="bg-white text-blue-500 px-6 py-3 rounded-full font-bold text-lg">Ver Servicios</a>
-            <a href="#contacto" class="ml-4 border border-white px-6 py-3 rounded-full text-lg">Contacto</a>
+            <a href="#servicios" class="bg-blue-700 text-white px-6 py-3 rounded-full font-bold text-lg hover:bg-blue-900">Ver Servicios</a>
+            <a href="#contacto" class="ml-4 border border-black px-6 py-3 rounded-full text-lg hover:bg-black hover:text-white">Contacto</a>
         </div>
     </section>
     
     <section id="servicios" class="max-w-6xl mx-auto py-20">
-        <h2 class="text-3xl font-bold text-center">Mis Servicios</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10 text-center">
-            <div class="p-6 bg-white shadow-md rounded-lg">
-                <h3 class="text-xl font-semibold">Creación de Páginas Web</h3>
-                <p class="mt-2">Diseño y desarrollo de sitios web funcionales y optimizados.</p>
-            </div>
-            <div class="p-6 bg-white shadow-md rounded-lg">
-                <h3 class="text-xl font-semibold">Marketing Digital</h3>
-                <p class="mt-2">Estrategias para aumentar la visibilidad y las conversiones.</p>
-            </div>
-            <div class="p-6 bg-white shadow-md rounded-lg">
-                <h3 class="text-xl font-semibold">Automatización</h3>
-                <p class="mt-2">Optimización de procesos para escalar negocios de forma eficiente.</p>
+        <h2 class="text-3xl font-bold text-center text-gray-900">Mis Servicios</h2>
+        
+        <!-- Diagrama Mejorado de Sistema de Negocios Digitales -->
+        <div class="flex flex-col items-center mt-12 space-y-6">
+            <!-- Título central -->
+            <div class="bg-black text-white text-xl font-bold py-4 px-8 rounded-lg shadow-lg">Sistema de Negocios Digitales</div>
+            
+            <!-- Contenedor de Servicios -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-5xl">
+                <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-red-500 text-center">
+                    <h3 class="font-semibold">Adquisición de Clientes</h3>
+                    <ul class="text-sm mt-2">
+                        <li>Publicidad Pagada</li>
+                        <li>Marketing de Contenidos</li>
+                        <li>SEO</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-orange-500 text-center">
+                    <h3 class="font-semibold">Conversión y Ventas</h3>
+                    <ul class="text-sm mt-2">
+                        <li>Embudos de Conversión</li>
+                        <li>Optimización de Landing Pages</li>
+                        <li>Email Marketing</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-blue-500 text-center">
+                    <h3 class="font-semibold">Automatización y Escalabilidad</h3>
+                    <ul class="text-sm mt-2">
+                        <li>Chatbots</li>
+                        <li>CRM y Flujos Automatizados</li>
+                        <li>Integraciones con Herramientas</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-green-500 text-center">
+                    <h3 class="font-semibold">Operaciones y Retención</h3>
+                    <ul class="text-sm mt-2">
+                        <li>Gestión de Clientes</li>
+                        <li>Fidelización y Remarketing</li>
+                        <li>Optimización de Procesos</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
     
-    <section id="contacto" class="bg-gray-200 py-16 text-center">
+    <section id="contacto" class="bg-blue-900 py-16 text-center text-white">
         <h2 class="text-3xl font-bold">Contacto</h2>
         <p class="mt-4">Escríbeme para conversar sobre cómo puedo ayudarte a hacer crecer tu negocio.</p>
-        <a href="#" class="mt-6 inline-block bg-blue-500 text-white px-6 py-3 rounded-full text-lg">Enviar Mensaje</a>
+        <a href="#" class="mt-6 inline-block bg-[#FFF200] text-black px-6 py-3 rounded-full text-lg font-bold hover:bg-yellow-500">Enviar Mensaje</a>
     </section>
     
-    <footer class="text-center py-6 bg-gray-900 text-white">
+    <footer class="text-center py-6 bg-black text-white">
         <p>&copy; 2025 Mi Marca. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
+
 
