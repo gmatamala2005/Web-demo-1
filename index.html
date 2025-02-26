@@ -4,83 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Marca Personal</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        body {
-            background: linear-gradient(135deg, #1e3c72, #2a5298);
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: auto;
-            padding: 30px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-        }
-
-        h1 {
-            font-size: 28px;
-            font-weight: 600;
-        }
-
-        p {
-            font-size: 18px;
-            margin: 10px 0 20px;
-        }
-
-        .btn-container {
-            margin-top: 20px;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 12px 20px;
-            margin: 10px;
-            font-size: 16px;
-            font-weight: 600;
-            text-decoration: none;
-            color: white;
-            border-radius: 8px;
-            transition: 0.3s ease-in-out;
-        }
-
-        .btn-services { background: #ff8c00; }
-        .btn-contact { background: #00c4ff; }
-
-        .btn:hover {
-            opacity: 0.8;
-            transform: scale(1.05);
-        }
-
-    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-
-    <div class="container">
-        <h1>Sobre Mí</h1>
-        <p>Soy un experto en negocios online con énfasis en la creación de sistemas integrales de negocios digitales. Ayudo a emprendedores y empresas a construir negocios online completos y escalables.</p>
-        
-        <div class="btn-container">
-            <a href="servicios.html" class="btn btn-services">Ver Servicios</a>
-            <a href="contacto.html" class="btn btn-contact">Contacto</a>
+<body class="bg-gray-100 text-gray-900">
+    <header class="bg-white shadow-md p-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Mi Marca</h1>
+            <nav>
+                <a href="#servicios" class="text-gray-700 hover:text-blue-500 px-4">Servicios</a>
+                <a href="#contacto" class="text-gray-700 hover:text-blue-500 px-4">Contacto</a>
+            </nav>
         </div>
-    </div>
-
+    </header>
+    
+    <section class="text-center py-20 bg-blue-500 text-white">
+        <h2 class="text-4xl font-extrabold">Construyendo Sistemas de Negocios Digitales</h2>
+        <p class="mt-4 text-lg">Ayudo a emprendedores y empresas a escalar sus negocios con estrategias digitales efectivas.</p>
+        <div class="mt-6">
+            <a href="#servicios" class="bg-white text-blue-500 px-6 py-3 rounded-full font-bold text-lg">Ver Servicios</a>
+            <a href="#contacto" class="ml-4 border border-white px-6 py-3 rounded-full text-lg">Contacto</a>
+        </div>
+    </section>
+    
+    <section id="servicios" class="max-w-6xl mx-auto py-20">
+        <h2 class="text-3xl font-bold text-center">Mis Servicios</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10 text-center">
+            <div class="p-6 bg-white shadow-md rounded-lg">
+                <h3 class="text-xl font-semibold">Creación de Páginas Web</h3>
+                <p class="mt-2">Diseño y desarrollo de sitios web funcionales y optimizados.</p>
+            </div>
+            <div class="p-6 bg-white shadow-md rounded-lg">
+                <h3 class="text-xl font-semibold">Marketing Digital</h3>
+                <p class="mt-2">Estrategias para aumentar la visibilidad y las conversiones.</p>
+            </div>
+            <div class="p-6 bg-white shadow-md rounded-lg">
+                <h3 class="text-xl font-semibold">Automatización</h3>
+                <p class="mt-2">Optimización de procesos para escalar negocios de forma eficiente.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contacto" class="bg-gray-200 py-16 text-center">
+        <h2 class="text-3xl font-bold">Contacto</h2>
+        <p class="mt-4">Escríbeme para conversar sobre cómo puedo ayudarte a hacer crecer tu negocio.</p>
+        <a href="#" class="mt-6 inline-block bg-blue-500 text-white px-6 py-3 rounded-full text-lg">Enviar Mensaje</a>
+    </section>
+    
+    <footer class="text-center py-6 bg-gray-900 text-white">
+        <p>&copy; 2025 Mi Marca. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
 
-</html>
-
-</body>
-</html>
