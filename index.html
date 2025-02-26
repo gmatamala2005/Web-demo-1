@@ -3,117 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Marca Personal - Negocios Digitales</title>
+    <title>Mi Marca Personal</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
+            font-family: 'Poppins', sans-serif;
         }
+
         body {
-            background-color: #f4f4f4;
-            color: #333;
-            text-align: center;
-        }
-        header {
-            background: linear-gradient(135deg, #007BFF, #00C6FF);
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
             color: white;
+            text-align: center;
             padding: 20px;
-            font-size: 28px;
-            font-weight: bold;
         }
+
         .container {
-            max-width: 900px;
-            margin: 40px auto;
-            background: white;
+            max-width: 800px;
+            margin: auto;
             padding: 30px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
+
         h1 {
-            font-size: 26px;
-            margin-bottom: 15px;
-            color: #007BFF;
+            font-size: 28px;
+            font-weight: 600;
         }
+
         p {
             font-size: 18px;
-            margin-bottom: 20px;
+            margin: 10px 0 20px;
         }
-        .services {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+
+        .btn-container {
+            margin-top: 20px;
         }
-        .service-card {
-            background: #007BFF;
-            color: white;
-            padding: 15px;
+
+        .btn {
+            display: inline-block;
+            padding: 12px 20px;
             margin: 10px;
-            border-radius: 8px;
-            width: 250px;
-            font-weight: bold;
-        }
-        footer {
-            margin-top: 30px;
-            background: #333;
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
             color: white;
-            padding: 15px;
+            border-radius: 8px;
+            transition: 0.3s ease-in-out;
         }
+
+        .btn-services { background: #ff8c00; }
+        .btn-contact { background: #00c4ff; }
+
+        .btn:hover {
+            opacity: 0.8;
+            transform: scale(1.05);
+        }
+
     </style>
 </head>
 <body>
-    <header>
-        Mi Marca Personal - Negocios Digitales
-    </header>
-    
+
     <div class="container">
-       
+        <h1>Sobre Mí</h1>
+        <p>Soy un experto en negocios online con énfasis en la creación de sistemas integrales de negocios digitales. Ayudo a emprendedores y empresas a construir negocios online completos y escalables.</p>
         
-        <h1><div class="container">
-    <h1>Sobre Mí</h1>
-    <p>Soy un experto en negocios online con énfasis en la creación de sistemas integrales de negocios digitales.</p>
-    
-    <h1>Mis Servicios</h1>
-    <div class="services">
-        <div class="service-card">🌐 Creación de Páginas Web</div>
-        <div class="service-card">📈 Marketing Digital</div>
-        <div class="service-card">⚙️ Automatización</div>
-    </div>
-
-    <br>
-    <a href="servicios.html" class="button">🛠️ Ver Servicios</a>
-    <a href="contacto.html" class="button">📩 Contacto</a>
-</div>
-
-<style>
-    .button {
-        display: inline-block;
-        background: #007BFF;
-        color: white;
-        padding: 10px 15px;
-        margin: 10px;
-        text-decoration: none;
-        border-radius: 5px;
-    }
-    .button:hover {
-        background: #0056b3;
-    }
-</style>
-</h1>
-        <div class="services">
-            <div class="service-card">🌐 Creación de Páginas Web</div>
-            <div class="service-card">📈 Marketing Digital y Publicidad</div>
-            <div class="service-card">⚙️ Automatización de Procesos</div>
-            <div class="service-card">💰 Estrategias de Monetización</div>
-            <div class="service-card">🚀 Crecimiento de Negocios Online</div>
+        <div class="btn-container">
+            <a href="servicios.html" class="btn btn-services">Ver Servicios</a>
+            <a href="contacto.html" class="btn btn-contact">Contacto</a>
         </div>
     </div>
 
-    <footer>
-        &copy; 2025 - Mi Marca Personal
-    </footer>
 </body>
+</html>
+
 </html>
 
 </body>
