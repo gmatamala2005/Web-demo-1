@@ -1,66 +1,114 @@
+/* Estilos generales */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #0a2540;
-  color: white;
-  margin: 0;
-  padding: 0;
-  text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
 }
 
-.container {
-  max-width: 900px;
-  margin: auto;
-  padding: 20px;
+/* Sección del encabezado principal */
+.hero {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
 }
 
-h2 {
-  font-size: 2rem;
-  color: #ffcc00;
-  margin-bottom: 20px;
+.hero .contenedor {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-p {
-  font-size: 1.2rem;
-  color: #d1d5db;
+.hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
 }
 
-.button {
-  display: inline-block;
-  background-color: #ffcc00;
-  color: #0a2540;
-  font-weight: bold;
-  padding: 10px 20px;
-  margin: 20px 0;
-  border-radius: 5px;
-  text-decoration: none;
-  transition: background 0.3s;
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
 }
 
-.button:hover {
-  background-color: #e6b800;
+.btn {
+    display: inline-block;
+    background-color: #ff9900;
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  margin-top: 40px;
+.btn:hover {
+    background-color: #e68a00;
 }
 
-.card {
-  background-color: #1e3a5f;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+/* Sección Lead Magnet */
+.lead-magnet {
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 80px 20px;
 }
 
-.card h3 {
-  font-size: 1.4rem;
-  color: #ffcc00;
+.lead-magnet .contenedor {
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-.card p {
-  font-size: 1rem;
-  color: #d1d5db;
+.lead-magnet h2 {
+    font-size: 2rem;
+    color: #222;
 }
+
+.lead-magnet p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Sección Conóceme */
+.conoceme {
+    background-color: #ffffff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.conoceme .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.conoceme .contenido {
+    max-width: 500px;
+    padding: 20px;
+    text-align: left;
+}
+
+.conoceme h2 {
+    font-size: 2.5rem;
+    color: #222;
+}
+
+.conoceme p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.conoceme .imagen {
+    max-width: 300px;
+    padding: 20px;
+}
+
+.conoceme .imagen img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
 
