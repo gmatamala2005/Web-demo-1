@@ -1,116 +1,76 @@
-/* Estilos generales */
+/* ==== Estilos Generales ==== */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-/* Sección del encabezado principal */
-.hero {
-    background-color: #222;
-    color: #fff;
-    text-align: center;
-    padding: 100px 20px;
-}
-
-.hero .contenedor {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.hero h1 {
-    font-size: 2.8rem;
-    margin-bottom: 10px;
-}
-
-.hero p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
-
-.btn {
-    display: inline-block;
-    background-color: #ff9900;
-    color: #fff;
-    padding: 12px 24px;
-    font-size: 1rem;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.btn:hover {
-    background-color: #e68a00;
-}
-
-/* Sección Lead Magnet */
-.lead-magnet {
-    background-color: #f9f9f9;
+/* ==== Sección Principal ==== */
+#principal {
     text-align: center;
     padding: 80px 20px;
+    background-color: #001f3f; /* Azul oscuro */
+    color: white;
 }
 
-.lead-magnet .contenedor {
+#principal h1 {
+    font-size: 2.5rem;
+    color: #FFD700; /* Amarillo */
+}
+
+#principal p {
+    font-size: 1.2rem;
     max-width: 600px;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
-.lead-magnet h2 {
-    font-size: 2rem;
-    color: #222;
+.boton {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #FFD700; /* Amarillo */
+    color: #001f3f;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background 0.3s;
 }
 
-.lead-magnet p {
-    font-size: 1.1rem;
-    color: #555;
-    margin-bottom: 20px;
+.boton:hover {
+    background-color: #FFC107; /* Amarillo más oscuro */
 }
 
-/* Sección Conóceme */
-.conoceme {
-    background-color: #ffffff;
-    padding: 80px 0;
+/* ==== Sección Lead Magnet ==== */
+#lead-magnet {
     text-align: center;
+    padding: 60px 20px;
+    background-color: white;
 }
 
-.conoceme .contenedor {
+#lead-magnet .contenedor {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    max-width: 1100px;
-    margin: 0 auto;
+    gap: 20px;
 }
 
-.conoceme .contenido {
-    max-width: 500px;
+.lead-item {
+    background: #001f3f;
+    color: white;
     padding: 20px;
-    text-align: left;
+    border-radius: 10px;
+    max-width: 250px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.conoceme h2 {
-    font-size: 2.5rem;
-    color: #222;
+.lead-item h3 {
+    color: #FFD700;
 }
 
-.conoceme p {
-    font-size: 1.1rem;
-    color: #555;
-    line-height: 1.6;
-}
-
-.conoceme .imagen {
-    max-width: 300px;
-    padding: 20px;
-}
-
-.conoceme .imagen img {
-    width: 100%;
-    height: auto;
-    border-radius: 15px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
-
+/* ==== Sección Conóceme ==== */
 #conoceme {
     text-align: center;
     padding: 80px 20px;
@@ -136,12 +96,12 @@ body {
 }
 
 #conoceme img {
-    width: 180px;  /* Ajusta el tamaño según sea necesario */
+    width: 180px;
     height: 180px;
-    border-radius: 50%; /* Hace la imagen circular */
-    object-fit: cover; /* Asegura que se vea bien sin deformarse */
-    border: 4px solid #FFD700; /* Borde amarillo para resaltar */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Agrega un ligero sombreado */
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #FFD700;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     margin-bottom: 20px;
 }
 
