@@ -1,104 +1,49 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Marca Personal</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gray-100 text-gray-900">
-    <header class="bg-black text-white shadow-md p-4">
-        <div class="max-w-6xl mx-auto flex justify-between items-center">
-            <h1 class="text-2xl font-bold">Mi Marca</h1>
-            <nav>
-                <a href="#servicios" class="text-white hover:text-[#FFF200] px-4">Servicios</a>
-                <a href="#conoceme" class="text-white hover:text-[#FFF200] px-4">Conóceme</a>
-                <a href="#contacto" class="text-white hover:text-[#FFF200] px-4">Contacto</a>
-            </nav>
-        </div>
-    </header>
-    
-    <section class="text-center py-20 bg-[#FFF200] text-black">
-        <h2 class="text-4xl font-extrabold">Construyendo Sistemas de Negocios Digitales</h2>
-        <p class="mt-4 text-lg">Ayudo a emprendedores y empresas a escalar sus negocios con estrategias digitales efectivas.</p>
-        <div class="mt-6">
-            <a href="#servicios" class="bg-blue-700 text-white px-6 py-3 rounded-full font-bold text-lg hover:bg-blue-900">Ver Servicios</a>
-            <a href="#contacto" class="ml-4 border border-black px-6 py-3 rounded-full text-lg hover:bg-black hover:text-white">Contacto</a>
-        </div>
-    </section>
-    
-    <!-- Sección Conóceme -->
-    <section id="conoceme" class="bg-white py-20 text-gray-900">
-        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center text-center md:text-left">
-            <div class="md:w-1/2 p-6">
-                <h2 class="text-3xl font-extrabold">Conóceme</h2>
-                <p class="mt-4 text-lg">Soy un apasionado de los negocios digitales, el marketing y la automatización. Mi misión es ayudar a emprendedores y empresas a construir sistemas digitales eficientes y escalables.</p>
-                <p class="mt-2 text-lg">Con experiencia en marketing, desarrollo web y optimización de procesos, he trabajado en estrategias que generan crecimiento sostenible.</p>
-            </div>
-            <div class="md:w-1/2 flex justify-center">
-                <img src="https://via.placeholder.com/300" alt="Ilustración" class="w-80 h-80 object-cover rounded-full shadow-lg">
-            </div>
-        </div>
-    </section>
-    
-    <section id="servicios" class="max-w-6xl mx-auto py-20">
-        <h2 class="text-3xl font-bold text-center text-gray-900">¿Qué puedo hacer por ti?</h2>
-        
-        <!-- Diagrama de Sistema de Negocios Digitales -->
-        <div class="mt-12 flex flex-col items-center">
-            <div class="relative flex flex-col items-center">
-                <div class="w-48 h-48 flex items-center justify-center bg-black text-white text-center font-bold rounded-full shadow-lg">
-                    Tu Sistema de <br> Negocios Digitales
-                </div>
-                <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-8 mt-10 w-full px-4">
-                    <div class="p-6 bg-white text-black shadow-md rounded-lg text-center border-t-4 border-red-500">
-                        <h3 class="font-semibold">Adquisición de Clientes</h3>
-                        <ul class="text-sm mt-2">
-                            <li>Publicidad Pagada</li>
-                            <li>Marketing de Contenidos</li>
-                            <li>SEO</li>
-                        </ul>
-                    </div>
-                    <div class="p-6 bg-white text-black shadow-md rounded-lg text-center border-t-4 border-orange-500">
-                        <h3 class="font-semibold">Conversión y Ventas</h3>
-                        <ul class="text-sm mt-2">
-                            <li>Embudos de Conversión</li>
-                            <li>Optimización de Landing Pages</li>
-                            <li>Email Marketing</li>
-                        </ul>
-                    </div>
-                    <div class="p-6 bg-white text-black shadow-md rounded-lg text-center border-t-4 border-blue-500">
-                        <h3 class="font-semibold">Automatización y Escalabilidad</h3>
-                        <ul class="text-sm mt-2">
-                            <li>Chatbots</li>
-                            <li>CRM y Flujos Automatizados</li>
-                            <li>Integraciones con Herramientas</li>
-                        </ul>
-                    </div>
-                    <div class="p-6 bg-white text-black shadow-md rounded-lg text-center border-t-4 border-green-500">
-                        <h3 class="font-semibold">Operaciones y Retención</h3>
-                        <ul class="text-sm mt-2">
-                            <li>Gestión de Clientes</li>
-                            <li>Fidelización y Remarketing</li>
-                            <li>Optimización de Procesos</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <section id="contacto" class="bg-blue-900 py-16 text-center text-white">
-        <h2 class="text-3xl font-bold">Contacto</h2>
-        <p class="mt-4">Escríbeme para conversar sobre cómo puedo ayudarte a hacer crecer tu negocio.</p>
-        <a href="#" class="mt-6 inline-block bg-[#FFF200] text-black px-6 py-3 rounded-full text-lg font-bold hover:bg-yellow-500">Enviar Mensaje</a>
-    </section>
-    
-    <footer class="text-center py-6 bg-black text-white">
-        <p>&copy; 2025 Mi Marca. Todos los derechos reservados.</p>
-    </footer>
-</body>
-</html>
+import React from "react";
 
+const LandingPage = () => {
+  return (
+    <div className="bg-blue-900 text-white min-h-screen flex flex-col items-center justify-center px-6 py-12">
+      {/* Sección de encabezado */}
+      <div className="text-center max-w-3xl">
+        <h1 className="text-5xl font-bold leading-tight mb-6 text-yellow-400">
+          Accede gratis a la herramienta que te ayudará a escalar tu negocio
+        </h1>
+        <p className="text-lg text-gray-300 mb-8">
+          Descubre estrategias probadas y recursos prácticos para hacer crecer tu empresa con menos esfuerzo y mayor efectividad.
+        </p>
+        <button className="bg-yellow-400 text-blue-900 px-6 py-3 text-lg font-semibold rounded-xl shadow-lg hover:bg-yellow-300 transition-all">
+          Accede Gratis
+        </button>
+      </div>
 
+      {/* Explicación breve del Lead Magnet */}
+      <div className="mt-16 max-w-4xl text-center">
+        <h2 className="text-4xl font-bold text-white mb-6">¿Qué es el Business Growth Kit?</h2>
+        <p className="text-lg text-gray-300 mb-6">
+          Es un conjunto de herramientas y estrategias diseñadas para optimizar tu negocio digital. Recibe acceso inmediato a una de sus secciones y desbloquea el resto dejando tu contacto.
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
+          <div className="bg-gray-800 p-6 rounded-xl shadow-lg">
+            <h3 className="text-2xl font-semibold text-yellow-400 mb-2">🔹 Optimización de Oferta</h3>
+            <p className="text-gray-300">Aprende a estructurar tu oferta de forma irresistible para atraer más clientes sin esfuerzo adicional.</p>
+          </div>
+          <div className="bg-gray-800 p-6 rounded-xl shadow-lg">
+            <h3 className="text-2xl font-semibold text-yellow-400 mb-2">🔹 Adquisición de Clientes</h3>
+            <p className="text-gray-300">Descubre estrategias efectivas para atraer y convertir clientes potenciales en compradores leales.</p>
+          </div>
+          <div className="bg-gray-800 p-6 rounded-xl shadow-lg">
+            <h3 className="text-2xl font-semibold text-yellow-400 mb-2">🔹 Automatización y Escalabilidad</h3>
+            <p className="text-gray-300">Implementa sistemas que te permitan crecer sin aumentar tu carga de trabajo.</p>
+          </div>
+          <div className="bg-gray-800 p-6 rounded-xl shadow-lg">
+            <h3 className="text-2xl font-semibold text-yellow-400 mb-2">🔹 Conversión y Retención</h3>
+            <p className="text-gray-300">Optimiza tu embudo de ventas y fideliza clientes para asegurar ingresos recurrentes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default LandingPage;
 
