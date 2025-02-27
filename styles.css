@@ -1,8 +1,12 @@
 /* RESET GENERAL */
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
     background-color: #f8f8f8;
     color: #333;
 }
@@ -66,23 +70,7 @@ body {
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid #000;
-}
 
-.conoceme-text {
-    max-width: 600px;
-}
-
-.conoceme-text h2 {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.conoceme-text p {
-    font-size: 18px;
-    line-height: 1.5;
-}
-
-}
 
 
 
