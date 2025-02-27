@@ -1,49 +1,45 @@
 import React from "react";
 
-const LandingPage = () => {
+const LeadMagnetSection = () => {
   return (
-    <div className="bg-blue-900 text-white min-h-screen flex flex-col items-center justify-center px-6 py-12">
-      {/* Sección de encabezado */}
-      <div className="text-center max-w-3xl">
-        <h1 className="text-5xl font-bold leading-tight mb-6 text-yellow-400">
-          Accede gratis a la herramienta que te ayudará a escalar tu negocio
-        </h1>
+    <section className="bg-blue-900 text-white py-20 px-6 text-center">
+      <div className="max-w-4xl mx-auto">
+        <h2 className="text-4xl font-bold text-yellow-400 mb-6">
+          Accede GRATIS a las herramientas que escalarán tu negocio
+        </h2>
         <p className="text-lg text-gray-300 mb-8">
-          Descubre estrategias probadas y recursos prácticos para hacer crecer tu empresa con menos esfuerzo y mayor efectividad.
+          El <span className="text-white font-semibold">Business Growth Kit</span> te brinda estrategias prácticas y herramientas poderosas para hacer crecer tu negocio con menos esfuerzo y más resultados.
         </p>
-        <button className="bg-yellow-400 text-blue-900 px-6 py-3 text-lg font-semibold rounded-xl shadow-lg hover:bg-yellow-300 transition-all">
-          Accede Gratis
-        </button>
+        <a
+          href="#access"
+          className="bg-yellow-400 text-blue-900 font-semibold px-6 py-3 rounded-lg text-lg shadow-lg hover:bg-yellow-300 transition"
+        >
+          Accede GRATIS Ahora
+        </a>
       </div>
 
-      {/* Explicación breve del Lead Magnet */}
-      <div className="mt-16 max-w-4xl text-center">
-        <h2 className="text-4xl font-bold text-white mb-6">¿Qué es el Business Growth Kit?</h2>
-        <p className="text-lg text-gray-300 mb-6">
-          Es un conjunto de herramientas y estrategias diseñadas para optimizar tu negocio digital. Recibe acceso inmediato a una de sus secciones y desbloquea el resto dejando tu contacto.
-        </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
-          <div className="bg-gray-800 p-6 rounded-xl shadow-lg">
-            <h3 className="text-2xl font-semibold text-yellow-400 mb-2">🔹 Optimización de Oferta</h3>
-            <p className="text-gray-300">Aprende a estructurar tu oferta de forma irresistible para atraer más clientes sin esfuerzo adicional.</p>
-          </div>
-          <div className="bg-gray-800 p-6 rounded-xl shadow-lg">
-            <h3 className="text-2xl font-semibold text-yellow-400 mb-2">🔹 Adquisición de Clientes</h3>
-            <p className="text-gray-300">Descubre estrategias efectivas para atraer y convertir clientes potenciales en compradores leales.</p>
-          </div>
-          <div className="bg-gray-800 p-6 rounded-xl shadow-lg">
-            <h3 className="text-2xl font-semibold text-yellow-400 mb-2">🔹 Automatización y Escalabilidad</h3>
-            <p className="text-gray-300">Implementa sistemas que te permitan crecer sin aumentar tu carga de trabajo.</p>
-          </div>
-          <div className="bg-gray-800 p-6 rounded-xl shadow-lg">
-            <h3 className="text-2xl font-semibold text-yellow-400 mb-2">🔹 Conversión y Retención</h3>
-            <p className="text-gray-300">Optimiza tu embudo de ventas y fideliza clientes para asegurar ingresos recurrentes.</p>
-          </div>
+      {/* Sección de las 4 partes del Lead Magnet */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
+        <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
+          <h3 className="text-xl font-bold text-yellow-400">1. Optimización de Conversión</h3>
+          <p className="text-gray-300 mt-2">Herramientas y estrategias para maximizar las ventas sin aumentar el tráfico.</p>
+        </div>
+        <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
+          <h3 className="text-xl font-bold text-yellow-400">2. Automatización de Clientes</h3>
+          <p className="text-gray-300 mt-2">Sistemas inteligentes para atraer y convertir clientes en piloto automático.</p>
+        </div>
+        <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
+          <h3 className="text-xl font-bold text-yellow-400">3. Marketing de Alto Impacto</h3>
+          <p className="text-gray-300 mt-2">Cómo utilizar estrategias avanzadas para destacar en un mercado saturado.</p>
+        </div>
+        <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
+          <h3 className="text-xl font-bold text-yellow-400">4. Expansión y Escalabilidad</h3>
+          <p className="text-gray-300 mt-2">Métodos para crecer sin perder rentabilidad ni calidad de servicio.</p>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
-export default LandingPage;
+export default LeadMagnetSection;
 
