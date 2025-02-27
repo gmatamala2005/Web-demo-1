@@ -111,4 +111,45 @@ body {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+#conoceme {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #f4f4f4;
+}
+
+#conoceme .contenedor {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#conoceme h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#conoceme .contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#conoceme img {
+    width: 180px;  /* Ajusta el tamaño según sea necesario */
+    height: 180px;
+    border-radius: 50%; /* Hace la imagen circular */
+    object-fit: cover; /* Asegura que se vea bien sin deformarse */
+    border: 4px solid #FFD700; /* Borde amarillo para resaltar */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Agrega un ligero sombreado */
+    margin-bottom: 20px;
+}
+
+#conoceme p {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 600px;
+}
+
+
 
