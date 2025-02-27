@@ -1,91 +1,76 @@
-/* Reset de márgenes y paddings */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Fuentes y colores generales */
+/* Estilos Generales */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
     background-color: #f4f4f4;
-    color: #333;
-}
-
-/* Contenedor común */
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
-/* Encabezado */
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 2rem 0;
+    margin: 0;
+    padding: 0;
     text-align: center;
 }
 
-header h1 {
-    font-size: 2.5rem;
+/* Contenedor principal */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-header p {
-    font-size: 1.2rem;
-    margin: 1rem 0;
-}
-
-.cta-btn {
-    background-color: #f1c40f;
+/* Estilo del título */
+h1 {
+    font-size: 24px;
+    font-weight: bold;
     color: #333;
-    padding: 0.5rem 1rem;
+}
+
+.highlight {
+    color: #FFA500; /* Color amarillo llamativo */
+}
+
+/* Descripción */
+.description {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Botón de llamada a la acción */
+.cta-button {
+    display: inline-block;
+    background-color: #FFA500;
+    color: white;
+    padding: 12px 20px;
     text-decoration: none;
     border-radius: 5px;
+    font-weight: bold;
+    margin-top: 15px;
 }
 
-.cta-btn:hover {
-    background-color: #d4b200;
+.cta-button:hover {
+    background-color: #ff8800;
 }
 
-/* Sección Sobre mí */
-.about {
-    padding: 2rem 0;
-    text-align: center;
+/* Secciones del Lead Magnet */
+.lead-magnet {
+    margin-top: 30px;
 }
 
-.about img {
-    width: 150px;
-    border-radius: 50%;
-    margin-top: 1rem;
+.section {
+    background-color: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-left: 5px solid #FFA500; /* Línea de color */
+    text-align: left;
 }
 
-/* Sección de Servicios */
-.services {
-    background-color: #fff;
-    padding: 2rem 0;
-    text-align: center;
+.section h2 {
+    font-size: 18px;
+    color: #333;
 }
 
-.services ul {
-    list-style-type: none;
+.section p {
+    font-size: 14px;
+    color: #555;
 }
 
-.services li {
-    margin: 1rem 0;
-}
-
-/* Sección de Contacto */
-.contact {
-    background-color: #333;
-    color: #fff;
-    padding: 2rem 0;
-    text-align: center;
-}
-
-footer {
-    background-color: #222;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
 }
